@@ -1,0 +1,344 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.logo{
+    text-align: center;
+}
+.heading h1{
+    font-size: 2.5rem;
+    color: aliceblue;
+    text-align: center;
+}
+.navber{
+    background-color: rgb(138, 120, 243);
+    padding: 1% 7%;
+}
+.menuber{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.menuber a{
+    font-size: 14px;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: rgb(81, 75, 110);
+    margin: 3px 0px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+.menuber a:hover{
+    background-color: grey;
+}
+[class*="col-"]{
+    float: left;
+    padding: 5px;;
+}
+[class*="col-"]{
+    width: 100%;0
+}
+.navber::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.profile .firstlogo{
+    width: 130px;
+    height: 90px;
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    transition: transform 2s;
+} 
+.profile .firstlogo:hover{
+    transform: rotate(360deg);
+}
+.profile .lastlogo{
+    width: 130px;
+    height: 90px;
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    transition: transform 2s;
+}
+.profile .lastlogo:hover{
+    transform: rotate(360deg);
+}
+.profile{
+    padding: 120px 10px;
+    position: relative;
+    text-align: center;
+}
+.profilename{
+    font-size: 3rem;
+    font-family: 'Satisfy', cursive;
+    font-weight: bolder;
+}
+.profilename p{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.aboutme{
+    background-color: darkolivegreen;
+    padding: 1% 7%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.ab{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+.dottedhr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 10px auto;
+    width: 60px;
+}
+.abimg img{
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 220px;
+    width: 200px;
+}
+.aboutme p, a{
+    color: aliceblue;
+}
+.aa p, a{
+    font-size: 1.2rem;
+    padding: 20px 5px;
+    margin: 10px 5px;
+}
+.aa a{
+    text-decoration: none;
+}
+.cv{
+    background-color: rgb(8, 49, 35);
+    color: aliceblue;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 5px 5px ;
+}
+.abtitle{
+    margin-bottom: 20px;
+}
+.aboutme::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.workexp{
+    background-color: darkgrey;
+    border: 3px solid black;
+    margin: 9px;
+    padding: 10px 15px;
+    height: 900px;
+    transition: 1s;
+}
+.allbio:hover{
+    box-shadow: 0px 5px 10px 8px solid black;
+}
+.worklogo{
+    text-align: center;
+}
+.worklogo img{
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 15px;
+
+}
+.workheading h2{
+    background-color: rgb(87, 85, 85);
+    margin-bottom: 20px;
+    color: aliceblue;
+    font-weight: bolder;
+    padding: 8px auto;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.workdesk li{
+    margin: 20px 30px;
+}
+.progressber{
+    padding: 2% 5%;
+}
+.progress li{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 50px 10px;
+    position: relative;
+}
+.progress li::before{
+    position: absolute;
+    content: '';
+    display: table;
+    clear: both;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(237, 243, 241);
+    top: calc(100% + 10px);
+    border-radius: 10px;
+}
+.progress li::after{
+    position: absolute;
+    content: '';
+    display: table;
+    clear: both;
+    width: 0;
+    height: 20px;
+    background-color: rgb(70, 71, 71);
+    top: calc(100% + 10px);
+    border-radius: 10px;
+
+    animation-duration: 2s;
+    animation-delay: 1.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.progress li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+.progress li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 80%;
+    }
+}
+.progress li.js::after{
+    animation-name: js;
+}
+@keyframes js{
+    to{
+        width: 60%;
+    }
+}
+.progress li.phyton::after{
+    animation-name: phyton;
+}
+@keyframes phyton{
+    to{
+        width: 90%;
+    }
+}
+.progress li.github::after{
+    animation-name: github;
+}
+@keyframes github{
+    to{
+        width: 70%;
+    }
+}
+.progress li.gitlab::after{
+    animation-name: gitlab;
+}
+@keyframes gitlab{
+    to{
+        width: 50%;
+    }
+}
+.progress li.jq::after{
+    animation-name: jq;
+}
+@keyframes jq{
+    to{
+        width: 80%;
+    }
+}
+.allbio::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.achivement{
+    background-color: darkslategrey;
+    margin: 1% 1%;
+}
+.achive{
+    text-align: center;
+    color: aliceblue;
+    padding: 10px 25px;
+    font-weight: bolder;
+}
+.biodata{
+    text-align: left;
+    font-weight: lighter;
+}
+.contact{
+    text-align: center;
+}
+.contact h2{
+    color: aliceblue;
+    font-weight: bolder;
+}
+.contact input, textarea{
+    width: 100%;
+    margin: 5px 5px;
+    text-align: center;
+    border-radius: 5px;
+    resize: none;
+    border: none;
+}
+.contact button{
+    background-color: rgb(19, 29, 19);
+    color: aliceblue;
+    border: none;
+    padding: 5px 15px;
+    margin: 5px 5px;
+    width: 120px;
+    height: 40px;
+}
+.link{
+    padding: 1% 7%;
+    text-align: center;
+}
+.link h2{
+    color: aliceblue;
+    font-weight: bolder;
+}
+.link button{
+    margin: 10px 8px;
+    padding: 7px 7px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+.achivement{
+    content: '';
+    display: table;
+    clear: both;
+}
+.footer{
+    color: rgb(13, 13, 14);
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-shadow: 5px 0px 10px 6px solid white;
+    background-color: blanchedalmond;
+}
+.nn button:hover{
+    background-color: gray;
+    transform: scale(1.5);
+}
